@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Project: Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+        <div><h1>Tic Tac Toe</h1></div>
+        
+      <div class="gameBoardBox">
+        <table class="tableBox">
+          <tr>
+            <td data-row="0" data-col="0" class="cell"></td>
+            <td data-row="0" data-col="1" class="cell"></td>
+            <td data-row="0" data-col="2" class="cell"></td>
+          </tr>
+          <tr>
+            <td data-row="1" data-col="0" class="cell"></td>
+            <td data-row="1" data-col="1" class="cell"></td>
+            <td data-row="1" data-col="2" class="cell"></td>
+          </tr>
+          <tr>
+            <td data-row="2" data-col="0" class="cell"></td>
+            <td data-row="2" data-col="1" class="cell"></td>
+            <td data-row="2" data-col="2" class="cell"></td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <h1 class="indicator">Player 1's turn</h1>
+    </div>
+    </div>
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
