@@ -2,17 +2,6 @@ const tableCells = document.querySelectorAll("td[data-row][data-col]");
 const info = document.querySelector(".info");
 let isWin = false;
 
-const Gameboard = {
-  "0,0": null,
-  "0,1": null,
-  "0,2": null,
-  "1,0": null,
-  "1,1": null,
-  "1,2": null,
-  "2,0": null,
-  "2,1": null,
-  "2,2": null,
-};
 
 const checkTurns = {
   turn: 1,
@@ -33,14 +22,14 @@ tableCells.forEach((cell) => {
       cell.textContent = "x";
       info.textContent = "Player 2's turn";
       isWin = checkWin(tableCells);
-      console.log(isWin);
 
     } else {
       cell.textContent = "o";
       info.textContent = "Player 1's turn";
       isWin = checkWin(tableCells);
-      console.log(isWin);
-
+    }
+    if (isWin) {
+        info.textContent = 'You Win!'
     }
   });
 });
