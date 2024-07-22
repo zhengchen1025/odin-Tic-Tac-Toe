@@ -17,10 +17,9 @@ body {
 }
 
 h1 {
-    color: blanchedalmond;
+  color: blanchedalmond;
+  margin: 1em;
 }
-
-
 
 .gameBoardBox {
   width: 80%;
@@ -32,6 +31,7 @@ h1 {
 }
 
 .tableBox {
+  table-layout: fixed;
   height: 90%;
   width: 90%;
 }
@@ -42,5 +42,14 @@ h1 {
 }
 
 .cell:hover {
-    background-color: blue;
+  background-color: blue;
+}
+
+td {
+  width: 33.33%;
+  height: 33.33%;
+  font-size: 5em;
+  color: gold;
+  text-align: center;
+  vertical-align: middle;
 }
